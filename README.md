@@ -14,3 +14,4 @@ in Ansys APDL, just use the option " Import data using" from file menu and selec
 To use it in AutoCAD, just open the text file in google documents directly from mail, copy the whole content and directly paste it at the command prompt.
 The aggregates will be subtracted from the cube and a copy of aggregates will be placed exactly at the required positions. Then this model can be exported to Ansys 
 Workbench
+![image](https://user-images.githubusercontent.com/108704507/179165649-d4b0fae2-29b2-4edc-a246-0ab471ea072a.png)
