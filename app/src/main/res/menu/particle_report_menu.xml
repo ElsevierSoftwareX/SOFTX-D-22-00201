@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/generated_number_item"
+        android:title="Generated Number"/>
+    <item
+        android:id="@+id/placed_number_item"
+        android:title="Placed Number"/>
+    <item
+        android:id="@+id/generated_volume_item"
+        android:title="Generated Volume"/>
+    <item
+        android:id="@+id/placed_volume_item"
+        android:title="Placed Volume"/>
+</menu>

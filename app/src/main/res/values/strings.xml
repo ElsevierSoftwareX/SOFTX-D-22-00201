@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MesoGen</string>
+    <string name="todo">TODO</string>
+    <string name="text_generating">Placing....</string>
+    <string name="use_this_file">Use this file ?\n\n</string>
+    <string name="radius_correction">Rad. Correction</string>
+    <string name="radius_correction_initial_value">0.999999</string>
+    <string name="company_name">SPLogics</string>
+    <string name="version_no">Ver.1.03</string>
+    <string name="input_aggregate_mix_data"><![CDATA[Input Aggregate & Mix Data]]></string>
+    <string name="sieve_cum_pass_details"><![CDATA[Sieve & Cum % Pass Details]]></string>
+    <string name="ansys_apdl">Ansys APDL</string>
+    <string name="autocad">AutoCAD</string>
+    <string name="raw_data">Raw Data</string>
+    <string name="select_mix_and_sieve_data">Select Mix and Sieve Data</string>
+    <string name="save_data">Save Data</string>
+    <string name="cancel">cancel</string>
+    <string name="unit_mm">mm</string>
+    <string name="old_file">Old File</string>
+    <string-array name="iterations_array">
+        <item>10</item>
+        <item>100</item>
+        <item>505</item>
+        <item>1000</item>
+        <item>5005</item>
+        <item>10000</item>
+        <item>100000</item>
+        <item>1000000</item>
+        <item>10000000</item>
+        <item>100000000</item>
+        <item>1000000000</item>
+    </string-array>
+</resources>

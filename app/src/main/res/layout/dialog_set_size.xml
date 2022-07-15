@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.splogics.firebase.mesogen.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewAppNameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/purple_700"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <TextView
+                android:id="@+id/textViewHeaderMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAppNameLabel"
+                android:text="Set Specimen Dimension"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <TextView
+                android:id="@+id/textViewCustomerDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeaderMain"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            <RadioGroup
+                android:id="@+id/radio_group_section_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Shape of Section"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/textViewCustomerDetails"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/checked_text_view_rectangular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Rectangular"
+                    android:checked="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/textViewCustomerDetails"/>
+                <RadioButton
+                    android:id="@+id/checked_text_view_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Circular"
+                    android:checked="false"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/textViewCustomerDetails"/>
+            </RadioGroup>
+            <EditText
+                android:id="@+id/edit_text_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Length in mm"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textViewCustomerDetails"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:id="@+id/edit_text_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Width in mm"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/edit_text_length"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/edit_text_depth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Depth in mm"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/edit_text_width"
+                android:inputType="numberDecimal"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_text_depth"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal|fill_vertical">
+
+                <Button
+                    android:id="@+id/button_set_specimen_size"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Set Dimension" />
+
+                <Button
+                    android:id="@+id/button_update_back"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="cancel"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/appInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/text_view_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/edit_text_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center_horizontal"
+            android:text="@string/version_no"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:text="@string/company_name"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</RelativeLayout>

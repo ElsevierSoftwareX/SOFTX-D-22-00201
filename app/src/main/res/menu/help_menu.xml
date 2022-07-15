@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/help_calculator"
+        android:title="Calculator"/>
+    <item
+        android:id="@+id/about_item"
+        android:title="About Mesogen"/>
+    <item
+        android:id="@+id/disclaimer_item"
+        android:title="Disclaimer"/>
+    <item
+        android:id="@+id/help_item"
+        android:title="Help"/>
+</menu>

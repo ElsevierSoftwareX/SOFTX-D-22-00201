@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/export_apdl_file_item"
+        android:title="@string/ansys_apdl"/>
+
+    <item
+        android:id="@+id/export_cad_file_item"
+        android:title="@string/autocad"/>
+
+    <item
+        android:id="@+id/export_raw_data_file_item"
+        android:title="@string/raw_data"/>
+
+    <item
+        android:id="@+id/export_old_data_file_item"
+        android:title="@string/old_file"/>
+
+</menu>
